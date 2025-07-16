@@ -47,4 +47,8 @@ group :development, :test do
 
   # Rspec for testing
   gem "rspec-rails", "~> 8.0.0"
+
+  gem "pry"
+
+  gem "factory_bot_rails"
 end
