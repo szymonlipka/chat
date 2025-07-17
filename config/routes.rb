@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { omniauth_callbacks: "devise/omniauth_callbacks" }
+
   resources :chat_rooms, only: [ :index, :show, :create ]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
